@@ -1277,7 +1277,7 @@ const jungleAwards = [
     {
         name: "AD",
         award: "Award de la meilleure Poire",
-        description: "Justification de l'Award...",
+        description: "Il a pas compris que c'est pas en cherchant dans les vignes qu'il en trouvera une autre🙄",
         photo: "images/AD.jpeg"
     },
     {
@@ -1288,33 +1288,33 @@ const jungleAwards = [
     },
     {
         name: "Loraline",
-        award: "Award du pied le plus capricieux",
-        description: "",
+        award: "Award du pied le plus capricieux 🦶",
+        description: "Et pourtant elle a quand même fait les petites Calanques, quelle femme !",
         photo: "images/Loraline.jpeg"
     },
     {
         name: "Mathew",
         award: "Award du stalkeur agrée de la Jungle",
-        description: "Justification de l'Award...",
+        description: "Le FBI envie cet instinct surdéveloppé : une info = une enquête, trois profils retrouvés et un arbre généalogique reconstitué.",
         photo: "images/Mathew.jpeg"
     },
     {
         name: "Sarah",
-        award: "Award du ",
-        description: "Justification de l'Award...",
+        award: "Award de l'exhibitionniste de la Jungle ",
+        description: "Peu adepte des vêtements sur elle-même, elle met pourtant un point d'honneur à habiller les autres…fantômes compris.",
         photo: "images/Sarah.jpeg"
     },
     {
         name: "Vâni",
-        award: "Award n°5",
-        description: "Justification de l'Award...",
+        award: "Award de la ministre des loisirs de la Jungle",
+        description: "Une journée de 48 heures, ce serait quand même plus pratique pour caser toutes ses passions.",
         photo: "images/Vâni.jpeg"
     },
     {
         name: "Chloé",
-        award: "Award n°6",
-        description: "Justification de l'Award...",
-        photo: ""
+        award: "Award de la personne la plus présente, ponctuelle, intelligente, belle, sexy, adroite, sophistiquée...",
+        description: "Toujours humble, restons concis",
+        photo: "images/Chloé1.jpeg"
     },
 ];
 
