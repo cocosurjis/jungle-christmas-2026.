@@ -1276,31 +1276,31 @@ function openFullPhoto(photo) {
 const jungleAwards = [
     {
         name: "AD",
-        award: "Award n°1",
+        award: "Award de la meilleure Poire",
         description: "Justification de l'Award...",
         photo: "images/AD.jpeg"
     },
     {
         name: "Gwendal",
-        award: "Award n°4",
-        description: "Justification de l'Award...",
+        award: "Award ",
+        description: "",
         photo: "images/Gwendal.jpeg"
     },
     {
         name: "Loraline",
-        award: "Award n°2",
-        description: "Justification de l'Award...",
+        award: "Award du pied le plus capricieux",
+        description: "",
         photo: "images/Loraline.jpeg"
     },
     {
         name: "Mathew",
-        award: "Award n°3",
+        award: "Award du stalkeur agrée de la Jungle",
         description: "Justification de l'Award...",
         photo: "images/Mathew.jpeg"
     },
     {
         name: "Sarah",
-        award: "Award n°4",
+        award: "Award du ",
         description: "Justification de l'Award...",
         photo: "images/Sarah.jpeg"
     },
