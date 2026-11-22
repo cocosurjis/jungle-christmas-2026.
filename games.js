@@ -1290,7 +1290,7 @@ const jungleAwards = [
         name: "Loraline",
         award: "Award du pied le plus capricieux 🦶",
         description: "Et pourtant elle a quand même fait les petites Calanques, quelle femme !",
-        photo: "images/Loraline.jpeg"
+        photo: "images/Loraline.jpg"
     },
     {
         name: "Mathew",
