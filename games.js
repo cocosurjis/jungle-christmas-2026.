@@ -1282,8 +1282,8 @@ const jungleAwards = [
     },
     {
         name: "Gwendal",
-        award: "Award ",
-        description: "",
+        award: "Award du Spider-Man de la Jungle",
+        description: "Pas encore recruté par Marvel, mais il s'entraîne sérieusement à grimper aux murs.",
         photo: "images/Gwendal.jpeg"
     },
     {

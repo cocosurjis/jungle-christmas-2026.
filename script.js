@@ -19,7 +19,7 @@ const decorations = [
     "💌", // Case 6
     "🍆", // Case 7
     "📷", // Case 8
-    "🐶", // Case 9
+    "🔠", // Case 9
     "🥸", // Case 10
     "🌟", // Case 11
     "🍽️", // Case 12
