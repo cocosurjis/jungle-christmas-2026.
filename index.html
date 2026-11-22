@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jungle Christmas</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="games.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+    <script src="config.js" defer></script>
+    <script src="activities.js" defer></script>
+    <script src="games.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="auth.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <p class="edition">✦ NOËL 2026 ✦</p>
+
+        <h1>JUNGLE ADVENT CALENDAR</h1>
+
+        <p class="subtitle">
+            25 jours, 25 surprises, zéro logique.
+        </p>
+    </header>
+
+    <!-- Chargement de la session -->
+
+    <p id="loading-screen">Chargement...</p>
+
+    <!-- Écran de connexion -->
+
+    <section id="login-screen" hidden>
+
+        <form id="login-form">
+
+            <div class="login-icon">🎄</div>
+
+            <h2>Bienvenue dans la Jungle</h2>
+
+            <p>Connecte-toi pour découvrir ton calendrier de l'avent.</p>
+
+            <label for="email">Adresse e-mail</label>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Ton adresse e-mail"
+                autocomplete="email"
+                required
+            >
+
+            <label for="password">Mot de passe</label>
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Ton mot de passe"
+                autocomplete="current-password"
+                required
+            >
+
+            <button type="submit" id="login-button">
+                Entrer dans la Jungle
+            </button>
+
+            <p id="login-error" role="alert"></p>
+
+        </form>
+
+    </section>
+
+    <!-- Espace joueur -->
+
+    <div id="game-screen" hidden>
+
+        <main>
+
+            <div class="player-bar">
+
+                <div class="player-info">
+
+                    <span class="player-avatar">🎅</span>
+
+                    <div>
+                        <strong id="player-name"></strong>
+                        <p id="player-progress"></p>
+                    </div>
+
+                </div>
+
+                <button id="logout-button">
+                    Déconnexion
+                </button>
+
+            </div>
+
+            <p id="game-error" role="alert"></p>
+
+            <p id="countdown"></p>
+
+            <div id="calendar"></div>
+
+            <button id="christmas-day" class="door">
+                <span class="decoration">🏆</span>
+                <span class="number">25 décembre</span>
+            </button>
+
+        </main>
+
+        <footer>
+<button id="complaint-button">
+    Votre avis nous intéresse 💌
+</button>
+            <p>Made for the Jungle by the one and only Chloé Dictator 👑</p>
+            <p>Toute plainte sera soigneusement ignorée.</p>
+
+            <label id="test-mode-container" hidden>
+                <input type="checkbox" id="test-mode">
+                Mode test
+            </label>
+
+        </footer>
+
+    </div>
+
+    <!-- Fenêtre d'ouverture des cases -->
+
+    <dialog id="day-modal">
+
+        <button id="close-modal" aria-label="Fermer">×</button>
+
+        <h2 id="modal-title"></h2>
+
+        <div id="modal-content"></div>
+
+    </dialog>
+
+<!-- Fenêtre des réclamations -->
+<dialog id="complaint-modal">
+    <button id="close-complaint" aria-label="Fermer">×</button>
+
+    <div class="complaint-content">
+        <div class="complaint-emoji">💅</div>
+        <h2>Non, je déconne.</h2>
+
+        <button id="complaint-ok">
+            J'ai compris, je vais manger mon seum dans mon coin 😔
+        </button>
+    </div>
+</dialog>
+
+</body>
+</html>

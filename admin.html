@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Administration - Jungle Christmas</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="admin.css">
+
+    <script defer
+        src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2">
+    </script>
+
+    <script defer src="config.js"></script>
+    <script defer src="admin.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <p class="edition">NOËL 2026</p>
+        <h1>JUNGLE CHRISTMAS</h1>
+        <p class="subtitle">L'atelier du Père Noël 🎅</p>
+    </header>
+
+    <main class="admin-main">
+
+        <section id="admin-loading">
+            <p>Vérification de ton accès...</p>
+        </section>
+
+        <section id="admin-denied" hidden>
+
+            <h2>Accès réservé 🎄</h2>
+
+            <p>
+                Cette page est réservée
+                à l'administratrice du calendrier.
+            </p>
+
+            <a href="index.html">
+                Retour au calendrier
+            </a>
+
+        </section>
+
+        <section id="admin-panel" hidden>
+
+            <div class="admin-topbar">
+
+                <h2>Personnaliser les cases</h2>
+
+                <a href="index.html">
+                    Voir le calendrier
+                </a>
+
+            </div>
+
+            <p class="admin-intro">
+                Choisis une case pour modifier
+                son activité.
+            </p>
+
+            <div id="admin-calendar"></div>
+
+            <div class="admin-editor">
+
+                <h2 id="admin-day-title">
+                    Sélectionne une case
+                </h2>
+
+                <form id="admin-form" hidden>
+
+                    <label for="admin-type">
+                        Type d'activité
+                    </label>
+
+                    <select id="admin-type">
+
+                        <option value="quiz">
+                            🧠 Quiz
+                        </option>
+
+                        <option value="vote">
+                            🗳️ Vote
+                        </option>
+
+                        <option value="question">
+                            ✍️ Question ouverte
+                        </option>
+
+                        <option value="surprise">
+                            🎁 Surprise
+                        </option>
+
+                        <option value="draw">
+                            🎲 Tirage aléatoire
+                        </option>
+
+                        <option value="photo">
+                            📸 Défi photo
+                        </option>
+
+                    </select>
+
+                    <label for="admin-title">
+                        Titre de la case
+                    </label>
+
+                    <input
+                        id="admin-title"
+                        type="text"
+                        maxlength="100"
+                        required
+                    >
+
+                    <label for="admin-question">
+                        Question, consigne ou message
+                    </label>
+
+                    <textarea
+                        id="admin-question"
+                        rows="4"
+                    ></textarea>
+
+                    <div id="admin-options-section" hidden>
+
+                        <label for="admin-options">
+                            Réponses ou éléments à tirer
+                        </label>
+
+                        <p class="admin-help">
+                            Écris un élément par ligne.
+                        </p>
+
+                        <textarea
+                            id="admin-options"
+                            rows="6"
+                            placeholder="Option 1&#10;Option 2&#10;Option 3"
+                        ></textarea>
+
+                    </div>
+
+                    <div id="admin-vote-section" hidden>
+
+                        <label class="admin-checkbox">
+
+                            <input
+                                type="checkbox"
+                                id="admin-self-vote"
+                            >
+
+                            Autoriser le vote pour soi-même
+
+                        </label>
+
+                    </div>
+
+                    <div id="admin-photo-section" hidden>
+
+                        <label class="admin-checkbox">
+
+                            <input
+                                type="checkbox"
+                                id="admin-caption"
+                                checked
+                            >
+
+                            Autoriser une légende
+
+                        </label>
+
+                    </div>
+
+                    <button
+                        type="submit"
+                        id="admin-save"
+                        class="admin-save"
+                    >
+                        Enregistrer les modifications
+                    </button>
+
+                    <p id="admin-message" role="status"></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Made for the Jungle 🎄</p>
+    </footer>
+
+</body>
+</html>
